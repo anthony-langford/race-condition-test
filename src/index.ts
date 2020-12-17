@@ -4,21 +4,21 @@ axios.defaults.baseURL = "http://localhost:3000";
 axios.defaults.timeout = 5000;
 axios.defaults.headers.common = {
   Authorization:
-    "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IndhcmVob3VzZWd1eUBzZWNvbmRjbG9zZXQuY29tIiwiaWF0IjoxNjA3NDQ0MDc2LCJleHAiOjE2MDc0ODAwNzZ9.elfG5xFjfCAQa7WYCFUiYBdlIyLUkuGfwOlXcZFLBWE",
+    "Bearer eb3deaca9461f94643cc77dd25f8d73e9b3bd82035fc73451fc28096210a8814",
   "Content-Type": "application/json; charset=utf-8",
 };
 
 const updateLocationItem = () => {
   return axios.post("/location-items/move-items-to-pallet", {
     items: [{ sku: "meatball", quantity: 3 }],
-    pallet_id: "PL-aOaJ4hb2",
+    pallet_id: "PL-yWIizAZT",
   });
 };
 
 const updateLocationItem2 = () => {
   return axios.post("/location-items/move-items-to-pallet", {
     items: [{ sku: "meatball", quantity: 3 }],
-    pallet_id: "PL-aOaJ4hb2",
+    pallet_id: "PL-yWIizAZT",
   });
 };
 
